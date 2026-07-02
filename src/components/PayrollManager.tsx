@@ -2025,32 +2025,6 @@ export default function PayrollManager({
                 </div>
               </div>
 
-              {/* Excel template download notice */}
-              <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-blue-500/5 dark:bg-blue-500/10 border border-blue-200/50 dark:border-blue-800/40 p-4 rounded-2xl">
-                <div className="flex items-start gap-3">
-                  <div className="p-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-xl mt-0.5">
-                    <Download className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-xs text-zinc-900 dark:text-white">
-                      Télécharger un modèle de structure Excel conforme
-                    </h4>
-                    <p className="text-[10px] text-zinc-500 dark:text-zinc-400 mt-0.5">
-                      Contient tous les 63 éléments du livre de paie et les informations collaborateurs pour garantir un import à 100% sans erreur.
-                    </p>
-                  </div>
-                </div>
-                <button
-                  id="btn-download-import-template"
-                  type="button"
-                  onClick={downloadTemplateExcel}
-                  className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded-xl text-[11px] transition-colors shadow-sm flex items-center justify-center gap-2 whitespace-nowrap"
-                >
-                  <FileSpreadsheet className="w-3.5 h-3.5" />
-                  <span>Modèle de Paie .xlsx</span>
-                </button>
-              </div>
-
               {/* Drag and drop zone */}
               <div
                 onDragOver={(e) => {

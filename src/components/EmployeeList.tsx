@@ -370,23 +370,23 @@ export default function EmployeeList({
                 </span>
 
                 {canModify && (
-                  <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="flex items-center gap-1 ">
                     <button
-                      id={`edit-employee-btn-${emp.id}`}
-                      onClick={(e) => handleOpenEdit(emp, e)}
-                      className="p-1.5 hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-lg text-zinc-500 hover:text-blue-600 dark:text-zinc-400 dark:hover:text-blue-400 transition-colors"
-                      title="Modifier"
-                    >
-                      <Edit2 className="w-3.5 h-3.5" />
-                    </button>
-                    <button
-                      id={`delete-employee-btn-${emp.id}`}
-                      onClick={(e) => handleDelete(emp, e)}
-                      className="p-1.5 hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-lg text-zinc-500 hover:text-red-600 dark:text-zinc-400 dark:hover:text-red-400 transition-colors"
-                      title="Supprimer"
-                    >
-                      <Trash2 className="w-3.5 h-3.5" />
-                    </button>
+  id={`edit-employee-btn-${emp.id}`}
+  onClick={(e) => handleOpenEdit(emp, e)}
+  className="p-2 rounded-xl bg-blue-50 text-blue-600 hover:bg-blue-100 dark:bg-blue-950/30 dark:text-blue-400 dark:hover:bg-blue-900/40 transition-all"
+  title="Modifier"
+>
+  <Edit2 className="w-4 h-4" />
+</button>
+                   <button
+  id={`delete-employee-btn-${emp.id}`}
+  onClick={(e) => handleDelete(emp, e)}
+  className="p-2 rounded-xl bg-red-50 text-red-600 hover:bg-red-100 dark:bg-red-950/30 dark:text-red-400 dark:hover:bg-red-900/40 transition-all"
+  title="Supprimer"
+>
+  <Trash2 className="w-4 h-4" />
+</button>
                   </div>
                 )}
               </div>

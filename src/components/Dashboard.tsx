@@ -195,10 +195,7 @@ export default function Dashboard({ employees, records, settings }: DashboardPro
             Période active : <span className="font-semibold text-zinc-700 dark:text-zinc-300">{getMonthName(activeMois)} {activeAnnee}</span>
           </p>
         </div>
-        <div className="flex items-center gap-2 bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 px-4 py-2 rounded-xl text-xs font-semibold border border-blue-100 dark:border-blue-900/50">
-          <Sparkles className="w-3.5 h-3.5" />
-          <span>Calculateur de paie en temps réel synchrone</span>
-        </div>
+       
       </div>
 
       {/* Main KPI Row */}
