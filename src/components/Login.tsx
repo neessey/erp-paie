@@ -207,20 +207,6 @@ export default function Login({ onGuestLogin }: LoginProps) {
                 <span>Se connecter avec Google</span>
               </button>
             </div>
-
-            {onGuestLogin && (
-              <div className="mt-4 pt-4 border-t border-dashed border-zinc-200">
-                <button
-                  id="btn-guest-login"
-                  type="button"
-                  onClick={onGuestLogin}
-                  className="w-full flex justify-center items-center gap-2 py-3 px-4 border border-zinc-200 hover:border-zinc-300 rounded-xl shadow-sm text-xs font-bold text-zinc-800 bg-amber-50 hover:bg-amber-100 transition-all cursor-pointer"
-                >
-                  <Sparkles className="w-4 h-4 text-amber-500" />
-                  <span>Accéder à l'ERP en Mode Démo (Hors-ligne)</span>
-                </button>
-              </div>
-            )}
           </div>
 
           <div className="mt-8 text-center text-xs text-zinc-500">
