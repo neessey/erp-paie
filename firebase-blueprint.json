@@ -1,0 +1,84 @@
+{
+  "entities": {
+    "Employee": {
+      "title": "Employee",
+      "description": "Represents an employee in the ERP system",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "nom": { "type": "string" },
+        "prenom": { "type": "string" },
+        "email": { "type": "string" },
+        "telephone": { "type": "string" },
+        "role": { "type": "string" },
+        "service": { "type": "string" },
+        "date_embauche": { "type": "string" },
+        "salaire_base": { "type": "number" }
+      },
+      "required": ["id", "nom", "prenom", "email", "salaire_base"]
+    },
+    "MonthlyRecord": {
+      "title": "MonthlyRecord",
+      "description": "Monthly payroll records for an employee",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "employe_id": { "type": "string" },
+        "mois": { "type": "string" },
+        "annee": { "type": "number" },
+        "jours_travailles": { "type": "number" },
+        "heures_sup": { "type": "number" },
+        "primes": { "type": "number" },
+        "ventes_realisees": { "type": "number" },
+        "commission_taux": { "type": "number" },
+        "ventes_objectif": { "type": "number" },
+        "observation": { "type": "string" }
+      },
+      "required": ["id", "employe_id", "mois", "annee", "jours_travailles"]
+    },
+    "AppSettings": {
+      "title": "AppSettings",
+      "description": "Global settings for the application",
+      "type": "object",
+      "properties": {
+        "nom_entreprise": { "type": "string" },
+        "charges_patronales": { "type": "number" },
+        "devise": { "type": "string" }
+      },
+      "required": ["nom_entreprise", "charges_patronales", "devise"]
+    },
+    "ActivityLog": {
+      "title": "ActivityLog",
+      "description": "Saves historical actions taken in the app",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "role": { "type": "string" },
+        "action": { "type": "string" },
+        "details": { "type": "string" },
+        "date": { "type": "string" },
+        "ancienne_valeur": { "type": "string" },
+        "nouvelle_valeur": { "type": "string" }
+      },
+      "required": ["id", "role", "action", "date"]
+    }
+  },
+  "firestore": {
+    "employees": {
+      "schema": "Employee",
+      "description": "List of active employees"
+    },
+    "records": {
+      "schema": "MonthlyRecord",
+      "description": "Monthly timesheets and payroll records"
+    },
+    "settings": {
+      "schema": "AppSettings",
+      "description": "Global application configuration"
+    },
+    "logs": {
+      "schema": "ActivityLog",
+      "description": "Audit logging trail"
+    }
+  }
+}

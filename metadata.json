@@ -1,0 +1,6 @@
+{
+  "name": "Gestion de Paie et Performance",
+  "description": "Système ERP de gestion de la paie, des performances des employés, du chiffre d'affaires et des taxes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

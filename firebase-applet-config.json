@@ -1,0 +1,10 @@
+{
+  "projectId": "erp-paie",
+  "appId": "1:949905597095:web:3b6e62dd5ffda356f8f182",
+  "apiKey": "AIzaSyCdKstz3rSDjWtdgdOpFavMm80Ktqf_nA4",
+  "authDomain": "erp-paie.firebaseapp.com",
+  "firestoreDatabaseId": "default",
+  "storageBucket": "erp-paie.firebasestorage.app",
+  "messagingSenderId": "949905597095",
+  "measurementId": ""
+}
